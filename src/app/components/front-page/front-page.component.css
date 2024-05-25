@@ -1,0 +1,57 @@
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the video covers the entire container */
+    z-index: -1;
+    /* Ensures the video stays in the background */
+    pointer-events: none;
+    /* Prevents interaction with the video element */
+}
+
+.btnsWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    /* Ensure it's above the video */
+}
+
+.testbutton {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #EEEEEE !important;
+    font-size: 20px;
+    text-shadow: 1px 1px 0px #CBDDA2;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 0px solid #3866A3;
+    background: #CBDDA2;
+    background: linear-gradient(to top, #CBDDA2, #919E74);
+    margin: 10px;
+    padding-inline: 5vw;
+    /* Adds space between buttons */
+}
+
+.testbutton:hover {
+    color: #EEEEEE !important;
+    background: #C5D1C6;
+}
