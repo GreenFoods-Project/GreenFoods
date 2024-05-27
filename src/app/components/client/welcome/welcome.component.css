@@ -1,0 +1,64 @@
+.background-video {
+    position: static;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.welcomeBackground {
+    position: absolute;
+    top: 30%;
+    left: 13%;
+    width: 75vw;
+    height: 50vh;
+    z-index: 2;
+    background-color: #a49571;
+    opacity: .5;
+}
+
+.welcomeWrapper {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 70vw;
+    height: 50vh;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    /* Ensure it's above the video */
+}
+
+h1 {
+    text-align: end;
+    margin-inline: 2vw;
+    margin-bottom: 10vh;
+    background-image: linear-gradient(to right, #d1fae3, #bceb64);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+p {
+    text-align: end;
+    font-size: 16px;
+    font-weight: bold;
+    margin-inline: 2vw;
+}
+
+#video-bg {
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+    will-change: transform, opacity;
+    transform: translate3d(0, 0, 0);
+}
