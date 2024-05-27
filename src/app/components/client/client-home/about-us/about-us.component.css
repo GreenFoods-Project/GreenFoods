@@ -1,0 +1,36 @@
+.container {
+    margin-top: 15vh;
+}
+
+img {
+    width: 50vw;
+}
+
+.aboutUsWrapper {
+    margin-top: 6vh;
+}
+
+.aboutUsQuesWrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-top: 5vh;
+}
+
+.bi-dash-lg {
+    font-size: 24px;
+}
+
+h3 {
+    background-image: linear-gradient(to right, #b0ece2, #3cceb5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: end;
+    color: transparent;
+    margin-block: 3vh;
+}
+
+p {
+    text-align: end;
+    color: white;
+}
