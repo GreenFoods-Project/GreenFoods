@@ -1,0 +1,126 @@
+.whyChooseUsWrapper {
+    margin-top: 100vh;
+    padding-bottom: 10vh;
+
+}
+
+.whyQuestionWrapper {
+    width: fit-content;
+    margin-left: 72%;
+    margin-bottom: 3vh;
+
+}
+
+.bi-dash-lg {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 6.5vh;
+    margin-left: 1vw;
+}
+
+.whyQuesImg {
+    width: 90%;
+    margin-left: 10%;
+}
+
+.cardsInfo {
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 5vw;
+    text-align: end;
+}
+
+.cardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.cardContainer {
+
+    width: 40%;
+    height: 30vh;
+    border-radius: 20px;
+    cursor: pointer;
+    perspective: 1000px;
+    position: relative;
+}
+
+.cardFront,
+.cardBack {
+    background-color: #374151;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardBack {
+    transform: rotateY(180deg);
+    color: #97f2e1;
+}
+
+.cardContainer:hover .cardFront {
+    transform: rotateY(-180deg);
+}
+
+.cardContainer:hover .cardBack {
+    transform: rotateY(0deg);
+}
+
+.cardContainer .cardFront,
+.cardContainer .cardBack {
+    transition: transform 0.6s;
+}
+
+.cardIcon {
+    width: 5vw;
+    height: 10vh;
+    fill: #97f2e1;
+    margin-top: 10%;
+}
+
+.backCardIcon {
+    width: 2vw;
+    fill: #97f2e1;
+    position: absolute;
+    top: 3vh;
+    left: 2vw;
+}
+
+.cardTitle {
+    color: #97f2e1;
+    text-align: center;
+    margin-top: 5vh;
+    margin-inline: 3vw;
+    padding-block: 1vh;
+    padding-inline: 1vw;
+    border: 1px solid #97f2e1;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.rtl-list {
+    position: absolute;
+    top: 11vh;
+    right: 1vw;
+    direction: rtl;
+    /* Set the text direction to right-to-left */
+    text-align: right;
+    /* Align the text to the right */
+    list-style-position: inside;
+    /* Ensure bullet points stay inside the list item */
+    padding-right: 0;
+    /* Remove any padding that might be added by default */
+}
+
+.rtl-list li {
+    font-size: 12px;
+    /* Optional: add some padding for spacing between list items */
+}

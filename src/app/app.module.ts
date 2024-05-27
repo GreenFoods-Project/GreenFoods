@@ -7,6 +7,7 @@ import { FrontPageComponent } from './components/front-page/front-page.component
 import { ClientComponent } from './components/client/client.component';
 import { NavbarComponent } from './components/client/navbar/navbar.component';
 import { WelcomeComponent } from './components/client/welcome/welcome.component';
+import { WhyChooseUsComponent } from './components/client/why-choose-us/why-choose-us.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { WelcomeComponent } from './components/client/welcome/welcome.component'
     FrontPageComponent,
     ClientComponent,
     NavbarComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    WhyChooseUsComponent
   ],
   imports: [
     BrowserModule,
