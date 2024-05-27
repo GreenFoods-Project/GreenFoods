@@ -1,0 +1,84 @@
+.navbar {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 4;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeIcon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-inline: .5vw;
+}
+
+.pageColorIcon {
+    width: 2vw;
+    cursor: pointer;
+    fill: white;
+    margin-inline: .5vw;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Logo {
+    width: 4vw;
+    color: #16a34a;
+}
+
+.logoTitleWrapper {
+    height: 10vh;
+}
+
+.logoTitleFirstWord {
+    margin: 0px;
+    padding: 0px;
+    margin-inline: .5vw;
+    font-size: 28px;
+    font-weight: 500;
+    /*     background-image: linear-gradient(to right, #066349, #16a34a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; */
+    color: white;
+    display: block;
+    height: 5vh;
+}
+
+.logoTitleSecondWord {
+    margin-left: 1.5vw;
+    font-size: 18px;
+    font-weight: 500;
+    /*     background-image: linear-gradient(to right, #066349, #16a34a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; */
+    color: white;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}

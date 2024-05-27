@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,9 +6,22 @@ import { Router } from '@angular/router';
   templateUrl: './front-page.component.html',
   styleUrls: ['./front-page.component.css']
 })
-export class FrontPageComponent {
+export class FrontPageComponent implements OnInit {
+
   constructor(private router: Router) { }
+
+  ngOnInit(): void {
+    const videoElement = document.getElementById('video-bg') as HTMLVideoElement;
+    if (videoElement) {
+      videoElement.muted = true;
+      videoElement.play().catch(error => {
+        // Handle autoplay error (if any)
+        console.error('Error playing video:', error);
+      });
+    }
+  }
+
   goToClientComponent() {
-    this.router.navigate(['/clientHome']); // Navigate to the client component
+    this.router.navigate(['/client']);
   }
 }
