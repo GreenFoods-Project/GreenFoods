@@ -1,0 +1,56 @@
+.container {
+    margin-top: 20vh;
+    text-align: center;
+    padding-bottom: 10vh;
+
+}
+
+img {
+    width: 50vw;
+}
+
+.howWorkQuesWrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-top: 5vh;
+}
+
+.bi-dash-lg {
+    font-size: 24px;
+}
+
+.howWorkContainer {
+    background-color: #111827;
+    border-radius: 20px;
+    width: 80vw;
+    height: 50vh;
+    margin-top: 5vh;
+    padding-top: 5vh;
+    padding-inline: 5vw;
+    box-shadow: 1px 2px 24px 0px rgba(0, 0, 0, 0.7);
+}
+
+.howWork {
+    background-image: linear-gradient(to right, #b0ece2, #3cceb5);
+    text-align: end;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.rtl-list {
+    margin-top: 5vh;
+    right: 1vw;
+    direction: rtl;
+    text-align: right;
+    list-style-position: inside;
+    padding-right: 0;
+    list-style-type: decimal;
+}
+
+.rtl-list li {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 1vh;
+}

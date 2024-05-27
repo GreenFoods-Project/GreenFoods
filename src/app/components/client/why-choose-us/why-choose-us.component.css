@@ -111,16 +111,11 @@
     top: 11vh;
     right: 1vw;
     direction: rtl;
-    /* Set the text direction to right-to-left */
     text-align: right;
-    /* Align the text to the right */
     list-style-position: inside;
-    /* Ensure bullet points stay inside the list item */
     padding-right: 0;
-    /* Remove any padding that might be added by default */
 }
 
 .rtl-list li {
     font-size: 12px;
-    /* Optional: add some padding for spacing between list items */
 }

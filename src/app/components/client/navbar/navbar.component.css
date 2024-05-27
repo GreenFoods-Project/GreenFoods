@@ -3,6 +3,9 @@
     height: 10vh;
     position: fixed;
     z-index: 4;
+    background-color: #1f2937;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* More pronounced shadow */
 }
 
 .container {
