@@ -1,0 +1,30 @@
+.whatsapp-float {
+    position: fixed;
+    width: 8vw;
+    height: 18vh;
+    bottom: 8vh;
+    left: 5vw;
+    background-image: url("../../../assets/Images/WhatsApp_icon.png.png");
+    background-size: cover;
+    /* Ensure the image covers the entire area */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Prevent repeating */
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    /* box-shadow: 2px 2px 3px #999; */
+    z-index: 100;
+    display: none;
+    /* Initially hidden */
+}
+
+.whatsapp-float i {
+    margin-top: 15px;
+}
+
+.visible {
+    display: block !important;
+}

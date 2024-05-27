@@ -1,0 +1,50 @@
+.container-fluid {
+    height: 60vh;
+    background-color: #030712;
+}
+
+h5 {
+    color: white;
+    margin-bottom: 2vh;
+}
+
+.productsWrapper {
+    justify-content: end;
+
+}
+
+.product {
+    color: #4f46e5;
+    line-height: 2vh;
+}
+
+.productsList {
+    width: 10vw;
+}
+
+.productsLine,
+.importIns {
+    width: 25vw;
+    margin-left: 37%;
+}
+
+.beImport {
+    color: #4f46e5;
+    font-size: 12px;
+}
+
+.importIns {
+    color: white;
+    font-size: 12px;
+}
+
+.footerData {
+    color: #717378;
+    font-size: 12px;
+}
+
+i {
+    color: #4f46e5;
+    font-size: 24px;
+    margin-left: 1vw;
+}

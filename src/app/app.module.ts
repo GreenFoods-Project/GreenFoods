@@ -11,6 +11,7 @@ import { WhyChooseUsComponent } from './components/client/client-home/why-choose
 import { HowWorkComponent } from './components/client/client-home/how-work/how-work.component';
 import { ClientHomeComponent } from './components/client/client-home/client-home.component';
 import { AboutUsComponent } from './components/client/client-home/about-us/about-us.component';
+import { FootbarComponent } from './components/client/footbar/footbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AboutUsComponent } from './components/client/client-home/about-us/about
     WhyChooseUsComponent,
     HowWorkComponent,
     ClientHomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    FootbarComponent
   ],
   imports: [
     BrowserModule,
