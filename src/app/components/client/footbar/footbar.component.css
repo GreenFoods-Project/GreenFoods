@@ -1,6 +1,6 @@
 .container-fluid {
     height: 60vh;
-    background-color: #030712;
+    background-color: #111827;
 }
 
 h5 {
@@ -26,6 +26,11 @@ h5 {
 .importIns {
     width: 25vw;
     margin-left: 37%;
+
+}
+
+hr {
+    color: #717378;
 }
 
 .beImport {

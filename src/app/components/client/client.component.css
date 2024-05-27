@@ -1,7 +1,7 @@
 .whatsapp-float {
     position: fixed;
-    width: 8vw;
-    height: 18vh;
+    width: 10vw;
+    height: 20vh;
     bottom: 8vh;
     left: 5vw;
     background-image: url("../../../assets/Images/WhatsApp_icon.png.png");
