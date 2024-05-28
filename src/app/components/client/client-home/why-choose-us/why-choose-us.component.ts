@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-why-choose-us',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./why-choose-us.component.css']
 })
 export class WhyChooseUsComponent {
-
+  @Input() isDarkMode = true;
 }

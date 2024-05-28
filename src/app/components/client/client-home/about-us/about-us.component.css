@@ -14,7 +14,7 @@ img {
 .aboutUsQuesWrapper {
     flex-direction: row;
     align-items: center;
-    justify-content: end;
+    justify-content: start;
     margin-top: 5vh;
 }
 
@@ -22,16 +22,24 @@ img {
     font-size: 24px;
 }
 
-h3 {
-    background-image: linear-gradient(to right, #b0ece2, #3cceb5);
+.aboutUsDarkMode {
+    text-align: start;
+    color: #99f6e4;
+}
+
+.aboutUsLightMode {
+    background-image: linear-gradient(to right, #2dada5, #17625d);
+    text-align: start;
     -webkit-background-clip: text;
     background-clip: text;
-    text-align: end;
     color: transparent;
+}
+
+h3 {
     margin-block: 3vh;
 }
 
 p {
-    text-align: end;
+    text-align: start;
     color: white;
 }

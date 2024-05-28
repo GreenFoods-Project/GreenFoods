@@ -3,7 +3,7 @@
     height: 10vh;
     position: fixed;
     z-index: 4;
-    background-color: #1f2937;
+    /* background-color: #1f2937; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     /* More pronounced shadow */
 }
@@ -15,15 +15,19 @@
 }
 
 .homeIcon {
-    font-size: 24px;
     cursor: pointer;
     margin-inline: .5vw;
+}
+
+.colorIconbtn {
+    background: none;
+    border: none;
+    outline: none;
 }
 
 .pageColorIcon {
     width: 2vw;
     cursor: pointer;
-    fill: white;
     margin-inline: .5vw;
 }
 
@@ -51,24 +55,29 @@ a {
     margin-inline: .5vw;
     font-size: 28px;
     font-weight: 500;
-    /*     background-image: linear-gradient(to right, #066349, #16a34a);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; */
-    color: white;
     display: block;
     height: 5vh;
 }
 
+.logoTitlelightMode {
+    background-image: linear-gradient(to right, #066349, #16a34a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.logoTitledarkMode {
+    color: white;
+}
+
 .logoTitleSecondWord {
-    margin-left: 1.5vw;
+    margin-right: 1vw;
     font-size: 18px;
     font-weight: 500;
     /*     background-image: linear-gradient(to right, #066349, #16a34a);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; */
-    color: white;
 }
 
 ul {
@@ -80,8 +89,27 @@ ul {
 
 ul li {
     margin: 0 10px;
-    color: white;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.pageOpenLightMode {
+    border-bottom: 2px solid #4f46e5;
+    padding-bottom: 1vh;
+    color: #4f46e5;
+}
+
+.pageOpenDarkMode {
+    border-bottom: 2px solid white;
+    padding-bottom: 1vh;
+    color: white;
+}
+
+.pageNotOpenLightMode {
+    color: #454e5d;
+}
+
+.pageNotOpenDarkMode {
+    color: white;
 }

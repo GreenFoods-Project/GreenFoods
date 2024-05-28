@@ -6,7 +6,7 @@
 
 .whyQuestionWrapper {
     width: fit-content;
-    margin-left: 72%;
+    margin-left: 70%;
     margin-bottom: 3vh;
 
 }
@@ -27,7 +27,7 @@
     font-size: 12px;
     font-weight: normal;
     margin-right: 5vw;
-    text-align: end;
+    text-align: start;
 }
 
 .cardsWrapper {
@@ -37,8 +37,25 @@
     gap: 16px;
 }
 
-.cardContainer {
+.lightCard {
+    background-color: #fbfef3;
+    color: #17625d;
+}
 
+.darkCard {
+    background-color: #374151;
+    color: #97f2e1;
+}
+
+.cardIconLight {
+    fill: #17625d;
+}
+
+.cardIconDark {
+    fill: #97f2e1;
+}
+
+.cardContainer {
     width: 40%;
     height: 30vh;
     border-radius: 20px;
@@ -49,7 +66,6 @@
 
 .cardFront,
 .cardBack {
-    background-color: #374151;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -59,11 +75,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 1px 8px 1px rgba(113, 115, 120, 0.43);
 }
 
 .cardBack {
     transform: rotateY(180deg);
-    color: #97f2e1;
+    /* color: #97f2e1; */
 }
 
 .cardContainer:hover .cardFront {
@@ -82,26 +99,23 @@
 .cardIcon {
     width: 5vw;
     height: 10vh;
-    fill: #97f2e1;
     margin-top: 10%;
 }
 
 .backCardIcon {
     width: 2vw;
-    fill: #97f2e1;
     position: absolute;
     top: 3vh;
     left: 2vw;
 }
 
 .cardTitle {
-    color: #97f2e1;
+    /* color: #97f2e1; */
     text-align: center;
     margin-top: 5vh;
     margin-inline: 3vw;
     padding-block: 1vh;
     padding-inline: 1vw;
-    border: 1px solid #97f2e1;
     border-radius: 10px;
     font-size: 18px;
 }

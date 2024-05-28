@@ -12,6 +12,8 @@ import { HowWorkComponent } from './components/client/client-home/how-work/how-w
 import { ClientHomeComponent } from './components/client/client-home/client-home.component';
 import { AboutUsComponent } from './components/client/client-home/about-us/about-us.component';
 import { FootbarComponent } from './components/client/footbar/footbar.component';
+import { CommonQuestionsComponent } from './components/client/common-questions/common-questions.component';
+import { ProductsComponent } from './components/client/products/products.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { FootbarComponent } from './components/client/footbar/footbar.component'
     HowWorkComponent,
     ClientHomeComponent,
     AboutUsComponent,
-    FootbarComponent
+    FootbarComponent,
+    CommonQuestionsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

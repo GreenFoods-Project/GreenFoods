@@ -34,7 +34,7 @@
 }
 
 h1 {
-    text-align: end;
+    text-align: start;
     margin-inline: 2vw;
     margin-bottom: 10vh;
     background-image: linear-gradient(to right, #d1fae3, #bceb64);
@@ -44,7 +44,7 @@ h1 {
 }
 
 p {
-    text-align: end;
+    text-align: start;
     font-size: 16px;
     font-weight: bold;
     margin-inline: 2vw;

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-footbar',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./footbar.component.css']
 })
 export class FootbarComponent {
-
+  @Input() isDarkMode = true;
 }

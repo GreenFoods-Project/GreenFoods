@@ -1,6 +1,5 @@
 .container-fluid {
     height: 60vh;
-    background-color: #111827;
 }
 
 h5 {
@@ -9,7 +8,7 @@ h5 {
 }
 
 .productsWrapper {
-    justify-content: end;
+    justify-content: start;
 
 }
 
@@ -39,7 +38,6 @@ hr {
 }
 
 .importIns {
-    color: white;
     font-size: 12px;
 }
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-how-work',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./how-work.component.css']
 })
 export class HowWorkComponent {
-
+  @Input() isDarkMode = true;
 }

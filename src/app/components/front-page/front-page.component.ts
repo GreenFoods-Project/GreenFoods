@@ -18,6 +18,11 @@ export class FrontPageComponent implements OnInit {
         // Handle autoplay error (if any)
         console.error('Error playing video:', error);
       });
+      videoElement.addEventListener('ended', () => {
+        videoElement.play().catch(error => {
+          console.error('Error replaying video:', error);
+        });
+      });
     }
   }
 
