@@ -1,15 +1,12 @@
 <div class="container whyChooseUsWrapper">
     <div class="d-flex whyQuestionWrapper">
+        <i class="bi bi-dash-lg" [style.color]="isDarkMode?'white':'#454e5d'"></i>
         <h2 class="mt-5" [style.color]="isDarkMode?'white':'#454e5d'">لماذا تختار جرين فودز</h2>
-        <i class="bi bi-dash-lg text-light"></i>
     </div>
     <div class="row">
         <div class="col-6">
-            <img class="whyQuesImg" src="../../../assets/Images/why-sanu-removebg-preview (4).png" alt="">
-        </div>
-        <div class="col-6">
-            <p class="cardsInfo" [style.color]="isDarkMode?'white':'#717378'">!ما عليك سوى النقر على كل بطاقة لقلبها
-                وقراءة المزيد من المعلومات</p>
+            <p class="cardsInfo" [style.color]="isDarkMode?'white':'#717378'">ما عليك سوى النقر على كل بطاقة لقلبها
+                وقراءة المزيد من المعلومات!</p>
             <div class="cardsWrapper">
                 <div class="cardContainer text-center">
                     <div class="cardFront" [ngClass]="{
@@ -224,6 +221,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="col-6">
+            <img class="whyQuesImg" src="../../../assets/Images/why-sanu-removebg-preview (4).png" alt="">
         </div>
     </div>
 </div>

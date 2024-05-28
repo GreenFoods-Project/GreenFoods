@@ -1,14 +1,375 @@
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deleniti dolorum cupiditate soluta vero
-    perspiciatis culpa ipsam excepturi maiores? Minima ipsum nulla porro voluptas hic dolore vitae fuga. Veniam
-    doloremque suscipit inventore repellendus quae, ab voluptates, reprehenderit qui quo fugit perspiciatis ex, odio
-    odit dolor dignissimos atque. Sunt placeat veritatis provident itaque deserunt vitae, aperiam debitis! Fuga,
-    quisquam aspernatur minus ex debitis quasi delectus impedit alias beatae, a aut laboriosam, dolor qui corporis
-    explicabo! Autem, molestias nemo? Temporibus inventore debitis itaque deserunt quia exercitationem ex iste, mollitia
-    qui architecto ab porro totam dolore veniam eum maiores ipsam voluptatum veritatis! Explicabo qui libero iste
-    pariatur perferendis enim dignissimos vero magnam quidem vitae consequuntur, sunt, illo molestias eaque eveniet
-    sequi, commodi ratione ea dicta cumque aliquid tenetur voluptates dolores! Laudantium repellendus quod at aspernatur
-    quia dolore voluptatibus quaerat delectus! Reiciendis magnam esse excepturi officiis repellendus enim consequuntur
-    deleniti tempore quidem ipsum ipsa vero dignissimos, dicta ipsam ex ducimus dolorem aut cumque illo eaque.
-    Reiciendis, dolor earum optio sit atque consequuntur esse alias beatae vitae saepe id eum. Cum, voluptatum eaque.
-    Officiis illum sequi, est enim voluptatibus molestias minima quam ut suscipit adipisci placeat accusamus tempora
-    illo, quibusdam iusto sint exercitationem ullam temporibus!common-questions works!</p>
+<div class="container">
+    <div class="row">
+        <h2 class="col-6" [style.color]="isDarkMode?'white':'#454e5d'">الأسئلة الشائعة</h2>
+        <div class="col-6">
+            <img src="../../../../assets/Images/images-removebg-preview.png" alt="">
+        </div>
+    </div>
+    <div class="questionsWrapper">
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==1 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(1)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText1 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==1, 'arrow-down' : dropdownOpen!=1}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==1"
+                [style.background]="dropdownOpen==1 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>توفر جرين فودز مجموعة واسعة من الفواكه والخضروات المجمدة والطازجة عالية الجودة، إلى جانب الحمضيات
+                    والمخللات والتوابل والأعشاب، بالإضافة إلى المنتجات الزراعية الأخرى من مصر.</p>
+                <p>تشمل مجموعة منتجاتنا أيضا الحبوب والبقول.</p>
+                <p>تفخر جرين فودز بتقديم مجموعة متنوعة من المنتجات المتميزة لتلبية احتياجات عملائها. يرجى ملاحظة أن
+                    المنتجات المدرجة على موقعنا ليست هي المنتجات الوحيدة التي نوردها, وبالتالي، إذا كنت بحاجة إلى منتج
+                    لم تجده على موقعنا، فيجب عليك الاستفسار من فرق المبيعات لدينا حول هذا المنتج.</p>
+                <p>بالإضافة إلى ذلك، نحن نقدم حلولا مخصصة لتلبية متطلبات العملاء المحددة، مثل خيارات التعبئة والتغليف
+                    ووضع العلامات. مع التركيز على الجودة ورضا العملاء، أنشأت جرين فودز نفسها كمورد موثوق به في صناعة
+                    الأغذية والزراعة.</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==2 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(2)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText2 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==2, 'arrow-down' : dropdownOpen!=2}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==2"
+                [style.background]="dropdownOpen==2 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>تتوفر عينات مجانية من المنتجات وهذه فرصة رائعة للعملاء لتجربة منتجات جديدة قبل الالتزام بالشراء.
+
+                    من المهم ملاحظة أنه على الرغم من أن العينات نفسها مجانية ، فقد يظل العملاء مسؤولين عن دفع تكاليف
+                    الشحن أو الترتيب للاستلام من خلال خدمات البريد السريع الخاصة بهم. ومع ذلك ، هذا ثمن ضئيل يجب دفعه
+                    مقابل فرصة تجربة منتج جديد دون الحاجة إلى إجراء عملية شراء كاملة.</p>
+
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==3 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(3)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText3 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==3, 'arrow-down' : dropdownOpen!=3}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==3"
+                [style.background]="dropdownOpen==3 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>من الممكن تخصيص العبوة لطلبات بمبلغ معين.
+
+                    يرجى مناقشة متطلباتك مع فريق المبيعات لدينا. سوف يزودونك بمعلومات حول الخيارات المختلفة المتاحة
+                    ويساعدونك في اختيار الخيار الأنسب لاحتياجاتك.
+
+                    يمكن لفريقنا مساعدتك في تصميم عبوات مخصصة تلبي متطلباتك المحددة ، سواء كانت علامة تجارية أو ملصقات
+                    خاصة أو أي جانب آخر من جوانب العبوة.
+
+                    نحن ملتزمون بتزويد عملائنا بأفضل خدمة ممكنة ، وسنبذل قصارى جهدنا لتلبية طلباتك.</p>
+
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==4 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(4)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText4 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==4, 'arrow-down' : dropdownOpen!=4}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==4"
+                [style.background]="dropdownOpen==4 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>هذا يعني أن جرين فودز يمكنها إنتاج منتجاتها بملصق وشعار وتغليف مختلف يناسب العلامة التجارية لشركة
+                    أخرى. من خلال القيام بذلك ، يمكن للشركة الأخرى بيع منتجات سانو فودز على أنها منتجات خاصة بها. وتقدم
+                    شركتنا خدمات وضع العلامات البيضاء لعملائها.
+
+                    يتيح ذلك للشركة الأخرى تقديم منتجات عالية الجودة لعملائها دون الحاجة إلى الاستثمار في عمليات البحث
+                    والتطوير والإنتاج المكلفة.
+
+                    تعد الملصقات البيضاء طريقة فعالة للشركات لتوسيع عروض منتجاتها دون الحاجة إلى استثمارات واسعة النطاق.
+                </p>
+
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==5 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(5)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText5 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==5, 'arrow-down' : dropdownOpen!=5}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==5"
+                [style.background]="dropdownOpen==5 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>تعتمد مهلة التسليم على حجم الطلب وتوافر المنتج ووجهة الشحن. سيزودك فريق المبيعات لدينا بتاريخ التسليم
+                    المقدر عند استلام طلبك.</p>
+
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==6 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(6)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText6 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==6, 'arrow-down' : dropdownOpen!=6}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==6"
+                [style.background]="dropdownOpen==6 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>قد تكون الخصومات متاحة للطلبات بالجملة أو خلال الفترات الترويجية. يرجى الاتصال بفريق المبيعات لدينا
+                    لمزيد من المعلومات.
+
+                    فريق المبيعات لدينا جاهز دائما لمساعدتك في أي أسئلة أو مخاوف قد تكون لديك فيما يتعلق بالخصومات على
+                    الطلبات بالجملة أو العروض الترويجية المستمرة.
+
+                    نحن نتفهم أن التكلفة عامل مهم في عملية صنع القرار الخاصة بك ، ونحن نسعى جاهدين لتوفير أكثر الأسعار
+                    تنافسية ممكنة. بالإضافة إلى الخصومات ، نقدم أيضا مجموعة من خيارات الدفع المرنة لجعل تجربة الشراء
+                    الخاصة بك سلسة وخالية من المتاعب قدر الإمكان. لا تتردد في التواصل معنا اليوم لمعرفة المزيد حول كيف
+                    يمكننا مساعدتك في التوفير في طلبك التالي.</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==7 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(7)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText7 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==7, 'arrow-down' : dropdownOpen!=7}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==7"
+                [style.background]="dropdownOpen==7 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>نعم ، تقدم جرين فودز خصومات حصرية للعملاء لأول مرة.
+
+                    بالإضافة إلى ذلك ، غالبا ما نجري عروضا ترويجية ومبيعات ، لذا تأكد من ترقبها أيضا. علاوة على ذلك ،
+                    يعد الاشتراك في نشرتنا الإخبارية طريقة رائعة أخرى للبقاء على اطلاع دائم بأحدث صفقاتنا وعروضنا. غالبا
+                    ما يكون المشتركون في الرسائل الإخبارية لدينا هم أول من يعرف عن أي عروض ترويجية أو مبيعات مستمرة.</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==8 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(8)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText8 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==8, 'arrow-down' : dropdownOpen!=8}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==8"
+                [style.background]="dropdownOpen==8 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>بادئ ذي بدء ، ستقلل مراقبة الجودة لدينا من أي مشكلة في الجودة إلى ما يقرب من الصفر. إذا كانت هناك
+                    مشكلة حقيقية في الجودة تسببنا فيها ، فيرجى الاتصال بفريق خدمة العملاء على الفور. سنعمل معك عن كثب
+                    لحل المشكلة على الفور ، وإذا تم تأكيد أي مشكلة في الجودة ، فسنقوم برد خسارتك.
+
+                    بالإضافة إلى تدابير مراقبة الجودة لدينا ، فإننا نعطي الأولوية أيضا لرضا العملاء. فريقنا مكرس لضمان
+                    رضاك التام عن تجربتك والمنتجات التي تتلقاها. إذا كانت هناك أي مخاوف أو مشكلات لديك ، سواء كانت
+                    متعلقة بالجودة أم لا ، فالرجاء عدم التردد في التواصل معنا. نحن نقدر ملاحظاتك وسنفعل كل ما في وسعنا
+                    لتلبية احتياجاتك في الوقت المناسب وبطريقة فعالة. في شركتنا ، نعتقد أن نجاحنا مدفوع برضا عملائنا ،
+                    ونسعى جاهدين لبناء علاقات طويلة الأمد مع كل واحد منهم.</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==9 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(9)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText9 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==9, 'arrow-down' : dropdownOpen!=9}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==9"
+                [style.background]="dropdownOpen==9 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>نعم ، يمكن لجرين فودز تقديم شهادات محددة للمنتجات التي توفرها عند الطلب.
+
+                    يمكن أن تتضمن هذه الشهادات معلومات حول جودة المنتج وسلامته وامتثاله لمعايير الصناعة.
+
+                    تهتم جرين فودز بشدة بضمان تلبية منتجاتها لأعلى معايير الجودة والسلامة ، ويسعدها تقديم الوثائق لدعم
+                    ذلك.
+
+                    سواء كنت شركة تتطلع إلى شراء منتجاتها أو مستهلكا مهتما بمعرفة المزيد ، تلتزم جرين فودز بالشفافية
+                    وتوفير المعلومات التي تحتاجها.</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==10 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(10)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText10 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==10, 'arrow-down' : dropdownOpen!=10}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==10"
+                [style.background]="dropdownOpen==10 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>نحن نضمن أن عبواتنا من أعلى مستويات الجودة وتفي بمعايير الصناعة لسلامة الأغذية. تعتبر عبواتنا السائبة
+                    مثالية لمقدمي الخدمات الغذائية والمصنعين الذين يحتاجون إلى كميات كبيرة من منتجاتنا ، في حين أن
+                    عبواتنا
+                    التي يبلغ وزنها 10 كيلوغرامات وأقل مثالية لتجار التجزئة الصغار أو الشركات التي ترغب في تقديم
+                    منتجاتنا
+                    لعملائها.
+
+                    بالإضافة إلى ذلك ، تم تصميم حزم البيع بالتجزئة الخاصة بنا لتكون ملفتة للنظر ومريحة للمستهلكين ، مما
+                    يسهل
+                    عليهم الاستمتاع بمنتجاتنا اللذيذة في المنزل. كما نقدم خيارات تغليف مخصصة لتلبية احتياجات العملاء
+                    المحددة
+                    ، مما يضمن أن منتجاتنا مصممة وفقا لمتطلباتهم الفريدة.</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==11 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(11)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText11 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==11, 'arrow-down' : dropdownOpen!=11}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==11"
+                [style.background]="dropdownOpen==11 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>تتبع جزين فودز تدابير صارمة لمراقبة الجودة لضمان أن جميع المنتجات المقدمة آمنة ومغذية. يتم فحص جميع
+                    المنتجات لتلبية أعلى معايير الجودة ومعايير السلامة المناسبة لكل بلد يتم تصدير المنتجات فيه.
+
+                    بالإضافة إلى ذلك ، تتبع جرين فودز الممارسات الزراعية الجيدة (GAP) ، وممارسات التصنيع الجيدة (GMP) ،
+                    وتحليل المخاطر ونقاط التحكم الحرجة (HACCP) ، ومعايير المبادرة العالمية لسلامة الأغذية (GFSI).
+
+                    تستخدم الشركة أيضا التكنولوجيا والمعدات المتقدمة لمراقبة جودة المنتجات في كل مرحلة من مراحل الإنتاج
+                    ، من مصادر المكونات إلى التعبئة والتغليف والشحن. توظف جرين فودز فريقا من علماء وفنيي الأغذية المهرة
+                    الذين يجرون اختبارات وتحليلات منتظمة على المنتجات للتأكد من أنها تلبي القيمة الغذائية المطلوبة
+                    وخالية من أي ملوثات ضارة.
+
+                    بالإضافة إلى ذلك ، تحافظ جرين فودز على اتصال مفتوح مع مورديها وعملائها ووكالاتها التنظيمية للبقاء
+                    على اطلاع دائم باتجاهات ومتطلبات الصناعة المتغيرة. بشكل عام ، تلتزم الشركة بتوفير منتجات آمنة ومغذية
+                    تلبي أعلى معايير الجودة في صناعة المواد الغذائية.</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==12 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(12)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText12 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==12, 'arrow-down' : dropdownOpen!=12}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==12"
+                [style.background]="dropdownOpen==12 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>جرين فودز ليست مجرد مزود ، نحن ملتزمون بمعايير عالية في مراقبة الجودة وإزالة التلوث والنظافة. هذا
+                    يضمن أن
+                    جميع منتجاتنا صحية ومغذية وآمنة ولذيذة.
+
+                    نحن نعمل أيضا مع شركات تجهيز الأغذية ورجال الأعمال والمزارعين في جميع أنحاء العالم ، ونساعدهم على
+                    تقديم أفضل منتجاتهم للعملاء على مستوى العالم. أعطت شركتنا الأولوية لحماية البيئة والنمو الإيجابي
+                    للناس والكوكب.
+
+                    نحن نركز دائما على تقديم منتجات طازجة وعالية الجودة باستمرار لتوفير خيارات لذيذة ومغذية لكل وجبة.
+
+                    يركز فريقنا في جرين فودز أيضا بشدة على رضا العملاء. نستمع إلى ملاحظات عملائنا ونجري تعديلات لضمان
+                    تلبية احتياجاتهم. هذا هو السبب في أن لدينا قاعدة عملاء مخلصين يثقون بنا لتزويدهم بأفضل المنتجات
+                    المتاحة.
+
+                    إن تفانينا في الجودة والاستدامة ورضا العملاء يميزنا حقا عن مقدمي الطعام الآخرين</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==13 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(13)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText13 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==13, 'arrow-down' : dropdownOpen!=13}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==13"
+                [style.background]="dropdownOpen==13 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>يتم تقديم المنتجات الموسمية أو ذات الإصدار المحدود من حين لآخر بواسطة جرين فودز.
+
+                    يرجى الاشتراك في النشرة الإخبارية لدينا أو متابعتنا على وسائل التواصل الاجتماعي للبقاء على اطلاع
+                    دائم بأحدث عروضنا.</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button [style.background]="dropdownOpen==14 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(14)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText14 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==14, 'arrow-down' : dropdownOpen!=14}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==14"
+                [style.background]="dropdownOpen==14 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>تظل جرين فودز على اطلاع دائم بأحدث اتجاهات الصناعة وطلبات المستهلكين من خلال أبحاث السوق وتعليقات
+                    العملاء والمشاركة في المعارض التجارية وأحداث الصناعة.</p>
+            </div>
+        </div>
+        <div class="dropdown endContent">
+            <button [style.background]="dropdownOpen==15 && !isDarkMode?'#f7fee7':'none'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" (click)="toggleDropdown(15)">
+                <div class="d-flex">
+                    <i [style.color]="isDarkMode?'#989faa':'#454e5d'" class="bi bi-question-circle-fill ms-2"></i>
+                    <p [style.color]="isDarkMode?'#989faa':'#454e5d'">{{ buttonText15 }}</p>
+                </div>
+                <span [style.border-color]="isDarkMode?'#989faa':'#454e5d'"
+                    [ngClass]="{'arrow-up': dropdownOpen==15, 'arrow-down' : dropdownOpen!=15}"></span>
+            </button>
+            <div class="dropdown-content" [style.color]="isDarkMode?'#989faa':'#454e5d'"
+                [style.border-color]="isDarkMode?'#989faa':'#ebecf0'" *ngIf="dropdownOpen==15"
+                [style.background]="dropdownOpen==15 && isDarkMode?'#111827':'none'">
+                <!-- Dropdown content here -->
+                <p>على الرغم من عدم وجود برنامج ولاء محدد ، إلا أننا نقدم عروضا ترويجية وخصومات عرضية لعملائنا الكرام.
+
+                    اشترك في النشرة الإخبارية لدينا أو تابعنا على وسائل التواصل الاجتماعي للبقاء على اطلاع.</p>
+            </div>
+        </div>
+    </div>
+</div>

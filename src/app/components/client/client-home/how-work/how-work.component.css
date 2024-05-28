@@ -12,7 +12,7 @@ img {
 .howWorkQuesWrapper {
     flex-direction: row;
     align-items: center;
-    justify-content: end;
+    justify-content: start;
     margin-top: 5vh;
 }
 
@@ -23,7 +23,7 @@ img {
 .howWorkContainer {
     border-radius: 20px;
     width: 80vw;
-    height: 50vh;
+    height: 47vh;
     margin-top: 5vh;
     padding-top: 5vh;
     padding-inline: 5vw;
@@ -39,13 +39,13 @@ img {
 }
 
 .howWorkDarkMode {
-    text-align: end;
+    text-align: start;
     color: #99f6e4;
 }
 
 .howWorkLightMode {
     background-image: linear-gradient(to right, #2dada5, #17625d);
-    text-align: end;
+    text-align: start;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
