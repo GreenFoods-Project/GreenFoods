@@ -1,6 +1,5 @@
 .container-fluid {
     height: 60vh;
-    background-color: #111827;
 }
 
 h5 {
@@ -39,7 +38,6 @@ hr {
 }
 
 .importIns {
-    color: white;
     font-size: 12px;
 }
 

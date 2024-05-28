@@ -7,6 +7,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class ClientComponent implements OnInit {
   isBottom = false;
+  isDarkMode: boolean = true;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -15,11 +16,17 @@ export class ClientComponent implements OnInit {
 
   ngOnInit() {
     this.checkScroll();
+    this.isDarkMode = localStorage.getItem("colorMode") == "dark";
+    console.log(this.isDarkMode);
+
   }
 
   checkScroll() {
     const scrollTop = window.scrollY;
     const windowHeight = window.innerHeight;
     this.isBottom = (scrollTop + windowHeight >= windowHeight + 150);
+  }
+  changePageColor(color: string) {
+    this.isDarkMode = color == "dark";
   }
 }

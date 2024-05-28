@@ -1,15 +1,21 @@
 <div class="container">
     <img src="../../../../assets/Images/how-sanu-works-header-removebg-preview.png" alt="">
     <div class="d-flex howWorkQuesWrapper">
-        <h2 class=" text-light me-3">كيف نعمل</h2>
+        <h2 class="me-3" [style.color]="isDarkMode?'white':'#454e5d'">كيف نعمل</h2>
         <i class="bi bi-dash-lg text-light"></i>
     </div>
-    <div class="howWorkContainer">
-        <h3 class="howWork">إذا كنت مستورد أغذية أو مصنع أغذية أو تاجر جملة أو موزع أو تاجر تجزئة يسعى إلى استيراد
+    <div class="howWorkContainer" [ngClass]="{
+        howWorkContainerDarkMode:isDarkMode,
+        howWorkContainerLightMode:!isDarkMode,
+    }">
+        <h3 [ngClass]="{
+            howWorkDarkMode:isDarkMode,
+            howWorkLightMode:!isDarkMode,
+        }">إذا كنت مستورد أغذية أو مصنع أغذية أو تاجر جملة أو موزع أو تاجر تجزئة يسعى إلى استيراد
             منتجات زراعية عالية
             الجودة
         </h3>
-        <ul class="rtl-list">
+        <ul class="rtl-list" [style.color]="isDarkMode?'white':'#454e5d'">
             <li>يجب عليك الاتصال بنا علي الواتساب للحصول على عرض أسعار للطلب. سنناقش معك تكلفة البضائع والشحن وأي
                 متطلبات تغليف محددة
                 تبحث عنها.</li>

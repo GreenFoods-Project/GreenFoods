@@ -1,8 +1,8 @@
-<app-navbar></app-navbar>
-<div class="container-fluid" style="background-color: #1f2937;">
-    <app-client-home></app-client-home>
+<app-navbar (toggleColorMode)="changePageColor($event)"></app-navbar>
+<div class="container-fluid" [style.background]="isDarkMode?'#1f2937':'white'">
+    <app-client-home [isDarkMode]="isDarkMode"></app-client-home>
 </div>
-<a href="https://wa.me/01211407221" class="whatsapp-float" target="_blank" [ngClass]="{'visible': isBottom}">
+<a href="https://wa.me/01205377135" class="whatsapp-float" target="_blank" [ngClass]="{'visible': isBottom}">
     <i class="fab fa-whatsapp"></i>
 </a>
-<app-footbar></app-footbar>
+<app-footbar [isDarkMode]="isDarkMode"></app-footbar>

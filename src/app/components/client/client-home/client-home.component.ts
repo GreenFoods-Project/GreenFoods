@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-client-home',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./client-home.component.css']
 })
 export class ClientHomeComponent {
+  @Input() isDarkMode = true;
 
 }

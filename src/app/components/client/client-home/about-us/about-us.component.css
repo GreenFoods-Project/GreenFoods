@@ -22,12 +22,20 @@ img {
     font-size: 24px;
 }
 
-h3 {
-    background-image: linear-gradient(to right, #b0ece2, #3cceb5);
+.aboutUsDarkMode {
+    text-align: end;
+    color: #99f6e4;
+}
+
+.aboutUsLightMode {
+    background-image: linear-gradient(to right, #2dada5, #17625d);
+    text-align: end;
     -webkit-background-clip: text;
     background-clip: text;
-    text-align: end;
     color: transparent;
+}
+
+h3 {
     margin-block: 3vh;
 }
 
