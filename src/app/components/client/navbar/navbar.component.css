@@ -93,3 +93,23 @@ ul li {
     font-weight: 500;
     cursor: pointer;
 }
+
+.pageOpenLightMode {
+    border-bottom: 2px solid #4f46e5;
+    padding-bottom: 1vh;
+    color: #4f46e5;
+}
+
+.pageOpenDarkMode {
+    border-bottom: 2px solid white;
+    padding-bottom: 1vh;
+    color: white;
+}
+
+.pageNotOpenLightMode {
+    color: #454e5d;
+}
+
+.pageNotOpenDarkMode {
+    color: white;
+}

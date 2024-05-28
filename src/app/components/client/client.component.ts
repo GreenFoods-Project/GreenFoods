@@ -8,7 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class ClientComponent implements OnInit {
   isBottom = false;
   isDarkMode: boolean = true;
-
+  pageOpen: number = 1;
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.checkScroll();
@@ -28,5 +28,9 @@ export class ClientComponent implements OnInit {
   }
   changePageColor(color: string) {
     this.isDarkMode = color == "dark";
+  }
+  changePageOpen(pgNum: number) {
+    this.pageOpen = pgNum;
+
   }
 }

@@ -1,6 +1,15 @@
-<app-navbar (toggleColorMode)="changePageColor($event)"></app-navbar>
+<app-navbar (toggleColorMode)="changePageColor($event)" (changePgOpen)="changePageOpen($event)"></app-navbar>
 <div class="container-fluid" [style.background]="isDarkMode?'#1f2937':'white'">
-    <app-client-home [isDarkMode]="isDarkMode"></app-client-home>
+    <ng-container *ngIf="pageOpen==1">
+        <app-client-home [isDarkMode]="isDarkMode"></app-client-home>
+    </ng-container>
+    <ng-container *ngIf="pageOpen==2">
+        <app-products></app-products>
+    </ng-container>
+    <ng-container *ngIf="pageOpen==3">
+        <app-common-questions></app-common-questions>
+    </ng-container>
+
 </div>
 <a href="https://wa.me/01205377135" class="whatsapp-float" target="_blank" [ngClass]="{'visible': isBottom}">
     <i class="fab fa-whatsapp"></i>

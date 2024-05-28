@@ -14,9 +14,30 @@
             </button>
         </div>
         <ul>
-            <li [style.color]="colorMode == 'dark'?'white':'black'">الأسئله الشائعه</li>
-            <li [style.color]="colorMode == 'dark'?'white':'black'">المنتجات</li>
-            <li [style.color]="colorMode == 'dark'?'white':'black'">الصفحه الرئيسيه</li>
+            <button (click)="changePageOpen(3)" class="colorIconbtn">
+                <li [ngClass]="{
+                pageNotOpenLightMode:pageOpen!=3&&colorMode != 'dark',
+                pageNotOpenDarkMode:pageOpen!=3&&colorMode == 'dark',
+                pageOpenLightMode:pageOpen==3&&colorMode != 'dark',
+                pageOpenDarkMode:pageOpen==3&&colorMode == 'dark',
+            }">الأسئله الشائعه</li>
+            </button>
+            <button (click)="changePageOpen(2)" class="colorIconbtn">
+                <li [ngClass]="{
+                pageNotOpenLightMode:pageOpen!=2&&colorMode != 'dark',
+                pageNotOpenDarkMode:pageOpen!=2&&colorMode == 'dark',
+                pageOpenLightMode:pageOpen==2&&colorMode != 'dark',
+                pageOpenDarkMode:pageOpen==2&&colorMode == 'dark',
+            }">المنتجات</li>
+            </button>
+            <button (click)="changePageOpen(1)" class="colorIconbtn">
+                <li [ngClass]="{
+                pageNotOpenLightMode:pageOpen!=1&&colorMode != 'dark',
+                pageNotOpenDarkMode:pageOpen!=1&&colorMode == 'dark',
+                pageOpenLightMode:pageOpen==1&&colorMode != 'dark',
+                pageOpenDarkMode:pageOpen==1&&colorMode == 'dark',
+            }">الصفحه الرئيسيه</li>
+            </button>
         </ul>
         <a href="../../../assets/Images/favicon.pngs" class="logoWrapper flex items-center transition-all duration-700">
             <div class="logoTitleWrapper">
